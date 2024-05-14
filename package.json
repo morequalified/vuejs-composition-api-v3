@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "npx ts-node src/server/index.ts"
   },
   "dependencies": {
     "@types/body-parser": "1.19",
