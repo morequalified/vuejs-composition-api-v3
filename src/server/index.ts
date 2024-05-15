@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 const allPosts = [today, thisWeek, thisMonth]
 
 app.get('/posts', function (_req: any, res: { json: (arg0: Post[]) => void }, _next: any) {
-  res.json([today, thisWeek, thisMonth])
+  res.json(allPosts)
 })
 
 app.post("/posts", (req: any, res: { json: (arg0: Post[]) => void }) => {
